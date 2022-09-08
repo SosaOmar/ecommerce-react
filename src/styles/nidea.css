@@ -1,0 +1,325 @@
+/*///////////////////////////// Cards del header ///////////////////////////////*/
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home__container-card {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+
+
+.card-home {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid var(--dark-gray);
+    width: 300px;
+    padding: 1em;
+    gap: 2em;
+    border-radius: 0.5em;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.card-home__header {
+    display: flex;
+    height: 250px;
+    border-bottom: solid 1px var(--dark-gray);
+}
+
+.card-home__img1 {
+    object-fit: contain;
+}
+
+.card-home__body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-home__name{
+    width: 100%;
+    margin-bottom: 1em;
+    color: var(--dark-gray);
+}
+
+.card-home__price-label{
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+.card-home__price-value{
+    margin-left: 1em;
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.card-home__btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fi-rs-shopping-cart-add{
+    color: white;
+    font-size: 17px;
+}
+
+/*///////////////////////////// Description products ///////////////////////*/
+.product-desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-des__body{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+.product-des__quantity-{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    border: 1px black solid;
+}
+
+.product-des__description{
+    width: 100%;
+}
+
+.product-desc__add-to-card{
+    width: 100%;
+    border: 0;
+    height: 50px;
+    background-color: var(--primary);
+    border-radius: 1em;
+    cursor: pointer;
+    transition: transform 300ms ease-in-out;
+}
+
+.product-desc__add-to-card:active{
+    transform: scale(0.9);
+    transition: transform 300ms ease-in-out;
+}
+
+.product-desc__quantity-btn{
+    border: 0;
+    background-color: transparent;
+}
+
+/*//////////////////////////////////// Slider //////////////////////////////////*/
+
+.slice-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.todas{
+    height: 300px;
+    max-width: 240px;
+}
+
+ .slider__btn{
+    background-color: var(--primary);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slice__img{
+    object-fit: contain;
+    height: 300px;
+}
+
+
+.slice {
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slice.active{
+    opacity: 1;
+} 
+
+/*///////////////////////////////// Formulario ///////////////*/
+
+.search-form{
+    display: flex;
+    height: 30px;
+    margin-bottom: 1em;
+    background-color: blue;
+}
+
+.search-form__input:focus{
+    outline:none;
+} 
+
+.search-form__btn-search{
+    background-color: var(--primary);
+    border: none;
+
+}
+/*/////////////////////// Cart ////////////////////////////*/
+.open-cart{
+    border: solid 2px black;
+    top: 80px;
+    right: 1em;
+    position: fixed;
+    width: 300px;
+    height: 80%;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: white;
+}
+
+.close-cart{
+    display: none;
+}
+
+.cart__btn-checkout{
+    width: 50%;
+    height: 30px;
+    border: none;
+    padding: 0;
+    background-color: var(--primary);
+    cursor: pointer;
+    bottom: 20px;
+}
+
+.cart-cart{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.car-items-total{
+    height: 580px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.cart-item{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    border: solid 1px black;
+    position: relative;
+    gap: 1em;
+}
+
+.brand{
+    font-size: 10px;
+    color: gray;
+}
+
+.cart__subtitle{
+    font-size: 15px;
+    color: black;
+    display: inline;
+}
+
+.cart-item__details{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.delete{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.cart-item__delete{
+    background-color: var(--primary);
+    border: 0;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.purchase{
+    display: flex;
+    justify-content: center;
+}
+
+.cart__total-price{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.login-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 400px;
+    background-color: white;
+}
+
+.form__email{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.form__password{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.form__login{
+    background-color: var(--primary);
+    border: 0;
+    width: 200px;
+    height: 30px;
+    align-self: center;
+}
+
+.form__input{
+    width: 200px;
+    border: 1px black solid;
+}

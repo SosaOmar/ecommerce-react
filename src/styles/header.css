@@ -1,0 +1,59 @@
+.header{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    text-decoration: none;
+    margin-bottom: 1em;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header__list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 2em;
+    font-size: 22px;
+}
+
+.header__logo{
+    color: var(--primary);
+    margin: 0;
+    font-size: 24px;
+}
+
+.header__item__icon{
+    color: var(--dark-gray);
+    cursor: pointer;
+}
+
+/*///////////////////////// Purchases ////////////////////////////////*/
+
+.purchases__card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 20px;
+}
+
+.purchase-card{
+    border: solid 1px black;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.products-purchase{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}

@@ -1,0 +1,35 @@
+:root {
+    --primary: #f85555;
+    --light-gray: #dcd9d9;
+    --gray: #c7c7c7;
+    --dark-gray: #4f4f4f;
+    --text-gray: #ababab;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    padding: 1em;
+}
+
+h1, h2, h3, h4, p, ul{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
