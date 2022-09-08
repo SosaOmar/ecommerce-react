@@ -20,23 +20,6 @@ function App() {
     dispatch(getAllProducts())
   }, [])
 
-  useEffect(() => {
-    const URL = `https://ecommerce-api-react.herokuapp.com/api/v1/users`
-    const data = {
-      firstName:"omarsosaso",
-      lastName:"omarsosaso",
-      email:"omarsosasos@gmail.com",
-      password:"0987654321s",
-      phone:"1234567891",
-      role:"Naaaaaa"
-    }
-    axios.post(URL, data)
-    .then( res => console.log(res.data))
-    .catch(err => console.log(err))
-  }, [])
-
-
-
   return (
     <div className="App">
       <Header />

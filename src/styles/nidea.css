@@ -224,7 +224,7 @@
 }
 
 .car-items-total{
-    height: 580px;
+    height: 500px;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
